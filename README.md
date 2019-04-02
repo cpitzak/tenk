@@ -4,6 +4,8 @@ This program reads 10k financial statements (balance sheet, income statement, an
 
 This program use to read a file with your tickers and then connect to morningstar and download the financial statements for you. However, morningstar no longer allows that see: [https://gist.github.com/hahnicity/45323026693cdde6a116](https://gist.github.com/hahnicity/45323026693cdde6a116) . I left the morningstar downloader code I wrote in the morningstar_downloader.py file encase they update this.
 
+Now you'll need to download the balance, income, and cash flow statements from morningstar and put them in the financials folder. Then run the program. Put as many as you want (see Download 10k Statements below for more info).
+
 # Setup
 1. conda create -n tenk python=3.6 anaconda
 2. Activate your conda environment:
@@ -11,7 +13,7 @@ This program use to read a file with your tickers and then connect to morningsta
     2. Linux: source activate tenk
 3. pip install sqlalchemy==1.3.1
 
-# Download 10k statements
+# Download 10k Statements
 1. Go to the links below and click the csv export icon:
     1. Income Statement: http://financials.morningstar.com/income-statement/is.html?t=AAPL&region=usa&culture=en-US
     2. Balance Sheet: http://financials.morningstar.com/balance-sheet/bs.html?t=AAPL&region=usa&culture=en-US
